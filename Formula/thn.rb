@@ -1,28 +1,28 @@
 class Thn < Formula
   desc "CLI tool for appending memos to Obsidian daily notes (Thino compatible)"
   homepage "https://github.com/ignission/thn"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ignission/thn/releases/download/v0.2.0/thn-0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d257b450bf880b1c682ed00aab0c0f1b54d474f1b150cceba7672dca53ec8289"
+      url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "e8fcff4af1fd3b7839117ebb11f620d31008a99c09f1489fe77585e3d6a94407"
     end
     on_intel do
-      url "https://github.com/ignission/thn/releases/download/v0.2.0/thn-0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "585cebe8fba55336e5a0a6923c00e0d00915d6dc8bb0d65f4a8c860e210f502d"
+      url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "ddeb40723fb984a986f8ec885b1aa8b94d51dde7c3682814c646226a7d16e166"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ignission/thn/releases/download/v0.2.0/thn-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "109077d0462db1714ed3daa2c3df8df942e6b3f15b5fbe029968f4168d140caf"
+      url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a10b3c6de16765c45617e255188870281177c2184b3827cf3b0b99f9aa42ee54"
     end
     on_intel do
-      url "https://github.com/ignission/thn/releases/download/v0.2.0/thn-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "469ebe1500ab24b74dd433d6439b15611fe38608ce724d07795206662010c1c6"
+      url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "05e67e1dca3b0129c71a94f5292a4d1a232d5ba9805a3481737991d73f0b8c19"
     end
   end
 
