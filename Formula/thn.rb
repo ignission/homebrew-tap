@@ -7,22 +7,22 @@ class Thn < Formula
   on_macos do
     on_arm do
       url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e8fcff4af1fd3b7839117ebb11f620d31008a99c09f1489fe77585e3d6a94407"
+      sha256 "1ffb05506903b6f1ec023a2b6026210b83c262986fd551f41ddfccc5ed69f184"
     end
     on_intel do
       url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ddeb40723fb984a986f8ec885b1aa8b94d51dde7c3682814c646226a7d16e166"
+      sha256 "248d9bfe86745f4672c09a37c8dc6208877dfaa075738d67e1a3c63d21891f48"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a10b3c6de16765c45617e255188870281177c2184b3827cf3b0b99f9aa42ee54"
+      sha256 "8c9d35ac53222328dd9fe31f5c84a7b623fba572d7a98f2d629a6494791dc50d"
     end
     on_intel do
       url "https://github.com/ignission/thn/releases/download/v0.3.0/thn-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "05e67e1dca3b0129c71a94f5292a4d1a232d5ba9805a3481737991d73f0b8c19"
+      sha256 "690b625e5ee4ad1d21e1e6711b44488e0fd4d081aa973dcbf660d4b3cfb41bd2"
     end
   end
 
