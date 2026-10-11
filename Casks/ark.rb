@@ -1,6 +1,6 @@
 cask "ark" do
-  version "1.6.0"
-  sha256 "b993240be1a155cb92e6d0b5beb474fd46ed01207a3f1417efa25ea5ea274dde"
+  version "1.7.0"
+  sha256 "aab389568aed88f1c149039c6aa094d923b82ba55aef67cf451f4f60543a9bab"
 
   url "https://github.com/ignission/claude-code-ark/releases/download/v#{version}/Ark-#{version}-arm64-mac.zip"
   name "Ark"
