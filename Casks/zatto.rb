@@ -8,14 +8,15 @@ cask "zatto" do
   homepage "https://github.com/ignission/homebrew-tap"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Zatto.app"
 
   # 自己署名なので、検疫の印が残るとGatekeeperが起動を止める
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Zatto.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Zatto.app"],
+        writable_paths: ["{{appdir}}/Zatto.app"]
   end
 
   uninstall quit: "tech.ignission.zatto"
