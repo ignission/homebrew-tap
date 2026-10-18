@@ -12,10 +12,23 @@ cask "zatto" do
 
   app "Zatto.app"
 
+  # 自己署名なので、検疫の印が残るとGatekeeperが起動を止める
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Zatto.app"]
+  end
+
   uninstall quit: "tech.ignission.zatto"
 
   zap trash: [
     "~/Library/Application Support/zatto",
     "~/Library/Preferences/tech.ignission.zatto.plist",
   ]
+
+  caveats <<~EOS
+    Zatto は自己署名で配布しています。このCaskは入れた後に検疫の印を外すので、
+    Gatekeeper の確認は出ません。
+    初回はメニューバーの Zatto から vault を選び、「入力監視」を許可してから
+    Zatto を開き直してください。許可は更新の後も残ります。
+  EOS
 end
