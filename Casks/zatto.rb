@@ -1,6 +1,6 @@
 cask "zatto" do
-  version "0.2.1"
-  sha256 "b35ad0706ab22931823be8c2f5cae903eac20f1f3d32efd982558800a4fa4af6"
+  version "0.2.2"
+  sha256 "868194f8b72b4ef43bdcd6791a76fea7fdae7952b5ddb9b435fbe07b3147c102"
 
   url "https://github.com/ignission/homebrew-tap/releases/download/zatto-v#{version}/Zatto-#{version}.zip"
   name "Zatto"
